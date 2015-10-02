@@ -2,22 +2,21 @@
 #include <string>
 #include <math.h>
 using namespace std;
-long rp(string a){
-	long c;
-	for (int i = 0; i <a.length(); ++i)
+long rpc(string name){
+	long rp;
+	for (int i = 0; i < name.length(); i++)
 	{
-		c+=a[i];
+		rp+=name[i];
 	}
-	c = abs(c);
-	return c % 100;
+	rp = abs(rp);
+	return rp % 100;
 }
 
 int main(){
 	string name;
 	cout << "请输入姓名：";
 	cin >> name;
-	int rpv = 100 - rp(name);
-	cout <<name << "的人品值为:" << rpv  << endl;
+	int rpv = 100 - rpc(name);
+	cout <<name << "的人品值为：" << rpv  << endl;
 	return 0;
 }
-
