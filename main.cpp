@@ -7,7 +7,6 @@ long rp(string a){
 	for (int i = 0; i <a.length(); ++i)
 	{
 		c+=a[i];
-		//cout << a[i] << " Code=" << int(a[i]) << endl;
 	}
 	c = abs(c);
 	return c % 100;
