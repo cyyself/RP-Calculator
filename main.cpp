@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <math.h>
+#include <cmath>
 using namespace std;
 long rpc(string name){
 	long rp;
